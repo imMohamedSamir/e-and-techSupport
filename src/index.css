@@ -3,6 +3,7 @@
 body {
   background-color: black;
   font-family: 'Cairo', sans-serif;
+  overflow: hidden;
 }
 
 * {

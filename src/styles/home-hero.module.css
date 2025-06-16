@@ -1,11 +1,10 @@
 .hero {
   margin-top: 70px;
-  height: 50%;
+  height: calc(100vh - 270px);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: end;
-  border: 1px solid white;
 }
 
 .hero > div {
@@ -32,7 +31,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 476px) {
   .hero > div h1 {
     font-size: 1.728rem;
   }
