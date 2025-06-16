@@ -1,0 +1,37 @@
+.card {
+  width: 150px;
+  height: 90px;
+  border: 1px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100px;
+    height: 90px;
+  }
+}

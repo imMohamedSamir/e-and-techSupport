@@ -1,22 +1,23 @@
-import "./App.css";
-import CopperPage from "./componants/Copper Comp/CopperPage";
-import CopperPhysicalPage from "./componants/Copper Comp/physical/CopperPhysicalPage";
-import MsanPage from "./componants/MSAN Comp/MsanPage";
-import HomePage from "./pages/home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Root from './pages/Root';
+import HomePage from './pages/Home';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Copper from './pages/Copper';
+import Ftth from './pages/Ftth';
+import Msan from './pages/Msan';
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/copper" element={<CopperPage />} />
-        <Route path="/copperPhysical" element={<CopperPhysicalPage />} />
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: '/copper', element: <Copper /> },
+      { path: '/ftth', element: <Ftth /> },
+      { path: '/msan', element: <Msan /> },
+    ],
+  },
+]);
 
-        <Route path="/msan" element={<MsanPage />} />
-      </Routes>
-    </Router>
-  );
+export default function App() {
+  return <RouterProvider {...{ router }} />;
 }
-
-export default App;
