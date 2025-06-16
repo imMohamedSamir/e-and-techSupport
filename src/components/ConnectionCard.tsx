@@ -21,6 +21,7 @@ export default function ConnectionCard({
       className={styles.card}
       onMouseEnter={() => setBackground(image)}
       onMouseLeave={clearBackground}
+      onMouseDown={clearBackground}
       style={{ backgroundImage: `url(${image})` }}
     >
       <span className={styles.overlayText}>{content}</span>
