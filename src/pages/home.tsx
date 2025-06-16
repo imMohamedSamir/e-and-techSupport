@@ -1,11 +1,12 @@
-import Navbar from '../components/home-components/Navbar';
-import Header from '../components/home-components/Header';
+import MainWrapper from '../components/MainWrapper';
+import Hero from '../components/home-components/Hero';
+
 export default function HomePage() {
   return (
     <>
-      <Header>
-        <Navbar />
-      </Header>
+      <MainWrapper>
+        <Hero />
+      </MainWrapper>
     </>
   );
 }

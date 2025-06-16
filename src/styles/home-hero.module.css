@@ -1,0 +1,39 @@
+.hero {
+  margin-top: 70px;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border: 1px solid white;
+}
+
+.hero > div {
+  max-width: 500px;
+}
+
+.hero > div h1 {
+  font-size: 2.986rem;
+}
+
+.hero > div p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+  .hero > div h1 {
+    font-size: 2.488rem;
+  }
+  .hero > div p {
+    font-size: 0.833rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero > div h1 {
+    font-size: 1.728rem;
+  }
+}

@@ -1,5 +1,5 @@
-import Container from '../Container';
-import styles from '../../styles/header.module.css';
+import Container from './Container';
+import styles from '../styles/header.module.css';
 type HeaderProps = {
   children: React.ReactNode;
 };
