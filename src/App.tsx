@@ -1,19 +1,19 @@
-import Root from './pages/Root';
-import HomePage from './pages/home';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Copper from './pages/Copper';
-import Ftth from './pages/Ftth';
-import Msan from './pages/Msan';
+import Root from "./pages/Root";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Copper from "./pages/Copper";
+import Ftth from "./pages/Ftth";
+import Msan from "./pages/Msan";
+import HomePage from "./pages/home";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Root />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: '/copper', element: <Copper /> },
-      { path: '/ftth', element: <Ftth /> },
-      { path: '/msan', element: <Msan /> },
+      { path: "/copper", element: <Copper /> },
+      { path: "/ftth", element: <Ftth /> },
+      { path: "/msan", element: <Msan /> },
     ],
   },
 ]);
