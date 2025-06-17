@@ -1,5 +1,5 @@
 import Root from './pages/Root';
-import HomePage from './pages/Home';
+import HomePage from './pages/home';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Copper from './pages/Copper';
 import Ftth from './pages/Ftth';
